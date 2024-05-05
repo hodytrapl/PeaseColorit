@@ -1,4 +1,4 @@
-execute at @r if dimension minecraft:overworld run team join overword @r
-execute at @r if dimension minecraft:the_nether run team join nether @r
-execute at @r if dimension minecraft:the_end run team join TheEnd @r
-execute at @r unless dimension overworld unless dimension the_end unless dimension the_nether run team join MODDED @r
+execute as @a[predicate=main:overworld] at @s run team join overword @s
+execute as @a[predicate=main:the_nether] at @s run team join nether @s
+execute as @a[predicate=main:the_end] at @s run team join TheEnd @s
+execute as @a[predicate=main:modded] at @s run team join MODDED @s
